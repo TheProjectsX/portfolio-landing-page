@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/src/styles/index.css" />
+        <title>Document</title>
+    </head>
+    <body class="font-primary">
+        <!-- Header / Home Section -->
+        <header class="bg-primary relative">
+            <nav class="max-width relative z-10 nav">
+                <!-- Menu Opener - Hamburger Icon -->
+                <label for="dropdown-menu-opener" class="menu-dropdown-label">
+                    <img src="/src/assets/icons/menu.svg" alt="Menu Icon" />
+                </label>
+                <input type="checkbox" id="dropdown-menu-opener" hidden />
+
+                <div class="site-logo">
+                    <a href="/"
+                        ><img
+                            src="/src/assets/icons/logo_dark.svg"
+                            width="136"
+                            height="45"
+                    /></a>
+                </div>
+
+                <div class="nav-links-container">
+                    <ul class="text-base font-bold flex gap-2 navbar-links">
+                        <li>
+                            <a
+                                href="#"
+                                class="px-1.5 hover:underline underline-offset-4"
+                                >About</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="px-1.5 hover:underline underline-offset-4"
+                                >Services</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="px-1.5 hover:underline underline-offset-4"
+                                >Portfolio</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="px-1.5 hover:underline underline-offset-4"
+                                >Blog</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-button">
+                    <a
+                        href="#"
+                        class="px-6 py-3 text-white bg-black text-center border border-black hover:text-black hover:bg-primary font-semibold"
+                    >
+                        Let's Talk
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Hero Section -->
+            <section
+                class="flex justify-between flex-col-reverse md:flex-row items-center gap-10 md:gap-0 max-width pt-4 pb-4 md:pb-0 overflow-hidden"
+            >
+                <div class="max-w-[460px] text-center md:text-left">
+                    <h2 class="text-lg mb-4">UX Designer</h2>
+                    <h3 class="text-4xl font-bold">Hi There, I'm</h3>
+                    <h3 class="text-4xl font-bold text-secondary mb-4">
+                        John Smith
+                    </h3>
+
+                    <p class="text-base mb-6">
+                        Welcome to my portfolio of captivating digital
+                        experiences. Explore my work and let's create something
+                        extraordinary together.
+                    </p>
+
+                    <div
+                        class="flex gap-2 items-center justify-center md:justify-normal"
+                    >
+                        <a
+                            href="#"
+                            class="px-8 py-2.5 text-white bg-black text-center border border-black hover:text-black hover:bg-primary font-semibold"
+                        >
+                            Hire Me
+                        </a>
+                        <a
+                            href="#"
+                            class="px-8 py-2.5 text-black bg-primary text-center border border-black hover:text-white hover:bg-black font-semibold"
+                        >
+                            Portfolio
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="/src/assets/images/home_hero.png"
+                        alt="Home hero Image"
+                        class="translate-y-1.5 xl:max-w-[670px]"
+                    />
+                </div>
+            </section>
+
+            <!-- Circle! -->
+            <div
+                class="hidden md:block w-36 h-36 bg-secondary rounded-full absolute left-1/3 -top-22"
+            ></div>
+        </header>
+
+        <!-- Main Section(s) -->
+        <main>
+            <!-- About Me Section -->
+            <section class="bg-black text-white py-16 relative">
+                <div
+                    class="max-w-[1064px] mx-auto px-5 flex flex-col items-center text-center"
+                >
+                    <h3 class="text-4xl font-bold mb-6">About Me</h3>
+
+                    <p class="max-w-[820px] mb-6">
+                        I'm John Smith, a UI/UX designer dedicated to crafting
+                        intuitive and visually stunning digital experiences.
+                        With a passion for user-centric design, I transform
+                        ideas into functional and beautiful interfaces. Let's
+                        collaborate and shape the future of design together.
+                    </p>
+
+                    <div
+                        class="flex justify-around flex-col gap-3 sm:flex-row w-full"
+                    >
+                        <div
+                            class="flex flex-row-reverse sm:flex-col items-center justify-between gap-2"
+                        >
+                            <p
+                                class="text-4xl sm:text-6xl text-primary font-bold"
+                            >
+                                502
+                            </p>
+                            <p class="font-bold">Projects Done</p>
+                        </div>
+                        <div
+                            class="flex flex-row-reverse sm:flex-col items-center justify-between gap-2"
+                        >
+                            <p
+                                class="text-4xl sm:text-6xl text-primary font-bold"
+                            >
+                                10+
+                            </p>
+                            <p class="font-bold">Years of Experience</p>
+                        </div>
+                        <div
+                            class="flex flex-row-reverse sm:flex-col items-center justify-between gap-2"
+                        >
+                            <p
+                                class="text-4xl sm:text-6xl text-primary font-bold"
+                            >
+                                273+
+                            </p>
+                            <p class="font-bold">Clients Served</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Circle! -->
+                <div
+                    class="w-56 h-56 bg-secondary rounded-full absolute left-1/2 -translate-x-1/2 -bottom-45"
+                ></div>
+            </section>
+
+            <!-- Services -->
+            <section class="py-16 bg-white relative">
+                <div
+                    class="max-width mx-auto px-5 flex flex-col items-center text-center"
+                >
+                    <h3 class="text-4xl font-bold mb-6">Services</h3>
+                    <p class="max-w-[820px] px-5 mb-7">
+                        Explore my design services, from user interface and
+                        experience to prototyping and testing. Let's craft
+                        exceptional digital experiences together.
+                    </p>
+                    <!-- Service List -->
+                    <div
+                        class="grid grid-cols-2 lg:grid-cols-4 gap-3 text-left"
+                    >
+                        <div class="p-3">
+                            <img
+                                src="/src/assets/icons/star.svg"
+                                alt="Star Icon"
+                                class="mb-3"
+                            />
+                            <h3 class="font-bold mb-6">Design</h3>
+                            <p>
+                                I specialize in web development and design,
+                                creating visually appealing, user-friendly
+                                digital experiences.
+                            </p>
+                        </div>
+                        <div class="p-3">
+                            <img
+                                src="/src/assets/icons/rings.svg"
+                                alt="Star Icon"
+                                class="mb-3"
+                            />
+                            <h3 class="font-bold mb-6">Branding</h3>
+                            <p>
+                                I'm a branding expert, crafting unique visual
+                                identities that tell your story and resonate
+                                with your audience.
+                            </p>
+                        </div>
+                        <div class="p-3">
+                            <img
+                                src="/src/assets/icons/search.svg"
+                                alt="Star Icon"
+                                class="mb-3"
+                            />
+                            <h3 class="font-bold mb-6">UX Research</h3>
+                            <p>
+                                "I specialize in user experience research,
+                                collaborating on web development, and ensuring
+                                user-friendly digital products.
+                            </p>
+                        </div>
+                        <div class="p-3">
+                            <img
+                                src="/src/assets/icons/checklist.svg"
+                                alt="Star Icon"
+                                class="mb-3"
+                            />
+                            <h3 class="font-bold mb-6">Useability Testing</h3>
+                            <p>
+                                I perform usability testing and optimize designs
+                                websites based on real-user feedback for
+                                seamless interactions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio -->
+            <section class="pb-16">
+                <div class="max-w-width mx-auto flex flex-col items-center">
+                    <div class="bg-primary w-full pt-12 pb-32 text-center">
+                        <h3 class="text-4xl font-bold mb-6">My Portfolio</h3>
+                        <p class="max-w-[820px] mx-auto px-5">
+                            Explore my design services, from user interface and
+                            experience to prototyping and testing. Let's craft
+                            exceptional digital experiences together.
+                        </p>
+                    </div>
+
+                    <!-- Portfolio Items -->
+                    <div
+                        class="max-width grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 -translate-y-20"
+                    >
+                        <div>
+                            <img
+                                src="/src/assets/portfolio/educational_platform.png"
+                                alt="Educational Platform Page Image"
+                                class="mb-8"
+                            />
+                            <div class="flex justify-between items-end">
+                                <div>
+                                    <h4 class="mb-3 font-semibold">
+                                        Educational Platform
+                                    </h4>
+                                    <p class="text-sm">
+                                        Web Design / Usability Testing
+                                    </p>
+                                </div>
+                                <a
+                                    href="#"
+                                    class="rounded-full bg-secondary p-1.5"
+                                    ><img
+                                        src="/src/assets/icons/arrow.svg"
+                                        alt="Arrow Icon"
+                                        class="w-4"
+                                /></a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img
+                                src="/src/assets/portfolio/travel_app.png"
+                                alt="Travel Page Page Image"
+                                class="mb-8"
+                            />
+                            <div class="flex justify-between items-end">
+                                <div>
+                                    <h4 class="mb-3 font-semibold">
+                                        Travel App Design
+                                    </h4>
+                                    <p class="text-sm">
+                                        UX Research / App Design
+                                    </p>
+                                </div>
+                                <a
+                                    href="#"
+                                    class="rounded-full bg-secondary p-1.5"
+                                    ><img
+                                        src="/src/assets/icons/arrow.svg"
+                                        alt="Arrow Icon"
+                                        class="w-4"
+                                /></a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img
+                                src="/src/assets/portfolio/personal_page.png"
+                                alt="Personal Page Image"
+                                class="mb-8"
+                            />
+                            <div class="flex justify-between items-end">
+                                <div>
+                                    <h4 class="mb-3 font-semibold">
+                                        Personal Page
+                                    </h4>
+                                    <p class="text-sm">Web Design</p>
+                                </div>
+                                <a
+                                    href="#"
+                                    class="rounded-full bg-secondary p-1.5"
+                                    ><img
+                                        src="/src/assets/icons/arrow.svg"
+                                        alt="Arrow Icon"
+                                        class="w-4"
+                                /></a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img
+                                src="/src/assets/portfolio/furniture_app.png"
+                                alt="Furniture Mobile App Image"
+                                class="mb-8"
+                            />
+                            <div class="flex justify-between items-end">
+                                <div>
+                                    <h4 class="mb-3 font-semibold">
+                                        Furniture Mobile App
+                                    </h4>
+                                    <p class="text-sm">App Design</p>
+                                </div>
+                                <a
+                                    href="#"
+                                    class="rounded-full bg-secondary p-1.5"
+                                    ><img
+                                        src="/src/assets/icons/arrow.svg"
+                                        alt="Arrow Icon"
+                                        class="w-4"
+                                /></a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img
+                                src="/src/assets/portfolio/coffee_house.png"
+                                alt="Coffee House Page Image"
+                                class="mb-8"
+                            />
+                            <div class="flex justify-between items-end">
+                                <div>
+                                    <h4 class="mb-3 font-semibold">
+                                        Coffee House Landing Page
+                                    </h4>
+                                    <p class="text-sm">
+                                        UX Research / Web Design
+                                    </p>
+                                </div>
+                                <a
+                                    href="#"
+                                    class="rounded-full bg-secondary p-1.5"
+                                    ><img
+                                        src="/src/assets/icons/arrow.svg"
+                                        alt="Arrow Icon"
+                                        class="w-4"
+                                /></a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img
+                                src="/src/assets/portfolio/home_services.png"
+                                alt="Home Services Page Image"
+                                class="mb-8"
+                            />
+                            <div class="flex justify-between items-end">
+                                <div>
+                                    <h4 class="mb-3 font-semibold">
+                                        Home Services Page
+                                    </h4>
+                                    <p class="text-sm">
+                                        Web Design / Marketing
+                                    </p>
+                                </div>
+                                <a
+                                    href="#"
+                                    class="rounded-full bg-secondary p-1.5"
+                                    ><img
+                                        src="/src/assets/icons/arrow.svg"
+                                        alt="Arrow Icon"
+                                        class="w-4"
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Design Skills -->
+            <section class="py-16 bg-[#F7F7F7] relative z-10">
+                <div
+                    class="max-width mx-auto px-5 flex flex-col items-center text-center"
+                >
+                    <h3 class="text-4xl font-bold mb-6">Core Design Skills</h3>
+                    <p class="max-w-[820px] px-5 mb-8">
+                        I excel in essential design skills, creating visually
+                        stunning and functional digital experiences. From UI
+                        design to UX research, my passion is to craft effective
+                        and memorable digital solutions.
+                    </p>
+
+                    <!-- Skills -->
+                    <div
+                        class="w-full flex flex-col md:flex-row gap-14 justify-between text-left"
+                    >
+                        <!-- Col 1 -->
+                        <div class="flex-1/2 space-y-2.5">
+                            <div>
+                                <p class="font-bold mb-1">Interaction Design</p>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-full h-1.5 bg-[#E1E1E1]">
+                                        <p class="w-[60%] h-full bg-black"></p>
+                                    </div>
+                                    <p>60%</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="font-bold mb-1">Usability Testing</p>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-full h-1.5 bg-[#E1E1E1]">
+                                        <p class="w-[70%] h-full bg-black"></p>
+                                    </div>
+                                    <p>70%</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="font-bold mb-1">User Research</p>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-full h-1.5 bg-[#E1E1E1]">
+                                        <p class="w-[45%] h-full bg-black"></p>
+                                    </div>
+                                    <p>45%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Col 2 -->
+                        <div class="flex-1/2 space-y-2.5">
+                            <div>
+                                <p class="font-bold mb-1">Figma</p>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-full h-1.5 bg-[#E1E1E1]">
+                                        <p class="w-[95%] h-full bg-black"></p>
+                                    </div>
+                                    <p>95%</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="font-bold mb-1">Prototyping</p>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-full h-1.5 bg-[#E1E1E1]">
+                                        <p class="w-[80%] h-full bg-black"></p>
+                                    </div>
+                                    <p>80%</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="font-bold mb-1">
+                                    Information Architecture
+                                </p>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-full h-1.5 bg-[#E1E1E1]">
+                                        <p class="w-[50%] h-full bg-black"></p>
+                                    </div>
+                                    <p>50%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section class="py-16 bg-primary relative">
+                <div
+                    class="max-width overflow-x-scroll overflow-y-hidden snap-x snap-mandatory hide-scrollbar scroll-smooth"
+                >
+                    <!-- Custom Slider -->
+                    <div class="w-[300%] flex">
+                        <!-- Item 01 -->
+                        <div
+                            class="w-full snap-center text-center relative px-5"
+                            id="testimonial_01"
+                        >
+                            <h4 class="text-4xl font-bold mb-8">
+                                Testimonials
+                            </h4>
+                            <p
+                                class="mb-6 max-w-[768px] mx-auto text-sm sm:text-base"
+                            >
+                                Sara Jones's designs are both visually
+                                captivating and highly effective. She
+                                transformed our website, enhancing user
+                                engagement and conversions. Her attention to
+                                detail and creative approach are top-notch.
+                                Highly recommended!
+                            </p>
+
+                            <div class="flex items-center justify-center gap-3">
+                                <img
+                                    src="/src/assets/images/client_01.png"
+                                    alt="Client Image"
+                                    width="50"
+                                    height="50"
+                                    class="rounded-full"
+                                />
+                                <p class="font-bold">John Smith</p>
+                                <p>/ CEO of XYZ Company</p>
+                            </div>
+
+                            <!-- Controls -->
+                            <a
+                                href="#testimonial_03"
+                                class="absolute top-0 md:top-1/2 md:-translate-y-1/2 left-10 p-2"
+                            >
+                                <img
+                                    src="/src/assets/icons/arrow_left_flat.svg"
+                                    alt="Left Arrow icon"
+                                />
+                            </a>
+                            <a
+                                href="#testimonial_02"
+                                class="absolute top-0 md:top-1/2 md-translate-y-1/2 right-10 p-2"
+                            >
+                                <img
+                                    src="/src/assets/icons/arrow_right_flat.svg"
+                                    alt="Left Arrow icon"
+                                />
+                            </a>
+                        </div>
+
+                        <!-- Item 02 -->
+                        <div
+                            class="w-full snap-center text-center relative px-5"
+                            id="testimonial_02"
+                        >
+                            <h4 class="text-4xl font-bold mb-8">
+                                Testimonials
+                            </h4>
+                            <p
+                                class="mb-6 max-w-[768px] mx-auto text-sm sm:text-base"
+                            >
+                                Sara Jones's designs are both visually
+                                captivating and highly effective. She
+                                transformed our website, enhancing user
+                                engagement and conversions. Her attention to
+                                detail and creative approach are top-notch.
+                                Highly recommended!
+                            </p>
+
+                            <div class="flex items-center justify-center gap-3">
+                                <img
+                                    src="/src/assets/images/client_01.png"
+                                    alt="Client Image"
+                                    width="50"
+                                    height="50"
+                                    class="rounded-full"
+                                />
+                                <p class="font-bold">John Deo</p>
+                                <p>/ CEO of ZAB Company</p>
+                            </div>
+
+                            <!-- Controls -->
+                            <a
+                                href="#testimonial_01"
+                                class="absolute top-0 md:top-1/2 md:-translate-y-1/2 left-10 p-2"
+                            >
+                                <img
+                                    src="/src/assets/icons/arrow_left_flat.svg"
+                                    alt="Left Arrow icon"
+                                />
+                            </a>
+                            <a
+                                href="#testimonial_03"
+                                class="absolute top-0 md:top-1/2 md:-translate-y-1/2 right-10 p-2"
+                            >
+                                <img
+                                    src="/src/assets/icons/arrow_right_flat.svg"
+                                    alt="Left Arrow icon"
+                                />
+                            </a>
+                        </div>
+
+                        <!-- Item 03 -->
+                        <div
+                            class="w-full snap-center text-center relative px-5"
+                            id="testimonial_03"
+                        >
+                            <h4 class="text-4xl font-bold mb-8">
+                                Testimonials
+                            </h4>
+                            <p
+                                class="mb-6 max-w-[768px] mx-auto text-sm sm:text-base"
+                            >
+                                Sara Jones's designs are both visually
+                                captivating and highly effective. She
+                                transformed our website, enhancing user
+                                engagement and conversions. Her attention to
+                                detail and creative approach are top-notch.
+                                Highly recommended!
+                            </p>
+
+                            <div class="flex items-center justify-center gap-3">
+                                <img
+                                    src="/src/assets/images/client_01.png"
+                                    alt="Client Image"
+                                    width="50"
+                                    height="50"
+                                    class="rounded-full"
+                                />
+                                <p class="font-bold">John Abram</p>
+                                <p>/ CEO of CDE Company</p>
+                            </div>
+
+                            <!-- Controls -->
+                            <a
+                                href="#testimonial_02"
+                                class="absolute top-0 md:top-1/2 md:-translate-y-1/2 left-10 p-2"
+                            >
+                                <img
+                                    src="/src/assets/icons/arrow_left_flat.svg"
+                                    alt="Left Arrow icon"
+                                />
+                            </a>
+                            <a
+                                href="#testimonial_01"
+                                class="absolute top-0 md:top-1/2 md:-translate-y-1/2 right-10 p-2"
+                            >
+                                <img
+                                    src="/src/assets/icons/arrow_right_flat.svg"
+                                    alt="Left Arrow icon"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="w-28 h-28 bg-secondary rounded-full absolute left-1/2 -translate-x-1/2 -top-15"
+                ></div>
+            </section>
+
+            <!-- Design Insights and Inspiration -->
+            <section class="py-16 bg-[#F7F7F7]">
+                <div
+                    class="max-width mx-auto px-5 flex flex-col items-center text-center"
+                >
+                    <h3 class="text-4xl font-bold mb-6">
+                        Design Insights and Inspiration
+                    </h3>
+                    <p class="max-w-[820px] px-5 mb-8">
+                        Discover industry insights, expert tips, and design
+                        inspiration. Stay updated with the latest trends in web
+                        design and user experience.
+                    </p>
+
+                    <!-- Cards -->
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-left"
+                    >
+                        <div class="bg-white">
+                            <img
+                                src="/src/assets/blog/typography.png"
+                                alt="Typography Post Banner"
+                                class="w-full mb-8"
+                            />
+
+                            <div class="px-3.5 pb-3">
+                                <p class="text-sm mb-3">August 15, 2023 / UX</p>
+                                <h4 class="font-bold mb-3">
+                                    Typography Tips for Design Success
+                                </h4>
+                                <p class="h-24 overflow-hidden mb-8">
+                                    Dive into the world of web typography and
+                                    discover how to choose, pair, and optimize
+                                    fonts for compelling and readable digital
+                                    designs.
+                                </p>
+
+                                <a
+                                    href="#"
+                                    class="flex items-center gap-2 font-bold"
+                                    >Read More
+                                    <img
+                                        src="/src/assets/icons/arrow_right_flat_small.svg"
+                                        alt="Arrow Flat"
+                                /></a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white">
+                            <img
+                                src="/src/assets/blog/color_psychology.png"
+                                alt="Typography Post Banner"
+                                class="w-full mb-8"
+                            />
+
+                            <div class="px-3.5 pb-3">
+                                <p class="text-sm mb-3">August 15, 2023 / UX</p>
+                                <h4 class="font-bold mb-3">
+                                    Typography Tips for Design Success
+                                </h4>
+                                <p class="h-24 overflow-hidden mb-8">
+                                    Explore how color choices impact user
+                                    emotions and decision-making in UX design.
+                                </p>
+
+                                <a
+                                    href="#"
+                                    class="flex items-center gap-2 font-bold"
+                                    >Read More
+                                    <img
+                                        src="/src/assets/icons/arrow_right_flat_small.svg"
+                                        alt="Arrow Flat"
+                                /></a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white">
+                            <img
+                                src="/src/assets/blog/boosting_ux.png"
+                                alt="Typography Post Banner"
+                                class="w-full mb-8"
+                            />
+
+                            <div class="px-3.5 pb-3">
+                                <p class="text-sm mb-3">August 15, 2023 / UX</p>
+                                <h4 class="font-bold mb-3">
+                                    Typography Tips for Design Success
+                                </h4>
+                                <p class="h-24 overflow-hidden mb-8">
+                                    Discover the power of microinteractions in
+                                    enhancing user experience and engagement.
+                                </p>
+
+                                <a
+                                    href="#"
+                                    class="flex items-center gap-2 font-bold"
+                                    >Read More
+                                    <img
+                                        src="/src/assets/icons/arrow_right_flat_small.svg"
+                                        alt="Arrow Flat"
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Get in Touch -->
+            <section class="py-16 bg-primary relative overflow-hidden">
+                <div
+                    class="max-width flex flex-col md:flex-row gap-15 md:gap-8 justify-between items-center"
+                >
+                    <div class="flex-1/2">
+                        <h3 class="text-4xl font-bold mb-6">Get in Touch</h3>
+                        <p class="max-w-[566px] mb-12">
+                            Have a question or a project in mind? I'd love to
+                            hear from you. Let's chat and make something amazing
+                            together.
+                        </p>
+
+                        <p class="flex gap-4 items-center mb-8">
+                            <img
+                                src="/src/assets/icons/call.svg"
+                                alt="Call Icon"
+                            />
+                            <span>+1205 5872 321</span>
+                        </p>
+                        <p class="flex gap-4 items-center mb-8">
+                            <img
+                                src="/src/assets/icons/mail.svg"
+                                alt="Email Icon"
+                            />
+                            <span> contact@sarajonesdesign.com</span>
+                        </p>
+                        <p class="flex gap-4 items-center mb-16">
+                            <img
+                                src="/src/assets/icons/location.svg"
+                                alt="Location Icon"
+                            />
+                            <span
+                                >1234 Design Street,Creativeville,
+                                Webland,Imaginary State, 98765</span
+                            >
+                        </p>
+
+                        <div class="flex gap-3">
+                            <a
+                                href="#"
+                                class="bg-white w-7 h-7 rounded-full flex justify-center items-center"
+                                ><img
+                                    src="/src/assets/icons/tweeter.svg"
+                                    alt="Tweeter"
+                            /></a>
+                            <a
+                                href="#"
+                                class="bg-white w-7 h-7 rounded-full flex justify-center items-center"
+                                ><img
+                                    src="/src/assets/icons/instagram.svg"
+                                    alt="Tweeter"
+                            /></a>
+                            <a
+                                href="#"
+                                class="bg-white w-7 h-7 rounded-full flex justify-center items-center"
+                                ><img
+                                    src="/src/assets/icons/dribble.svg"
+                                    alt="Tweeter"
+                            /></a>
+                            <a
+                                href="#"
+                                class="bg-white w-7 h-7 rounded-full flex justify-center items-center"
+                                ><img
+                                    src="/src/assets/icons/facebook.svg"
+                                    alt="Tweeter"
+                            /></a>
+                        </div>
+                    </div>
+
+                    <div class="flex-1/2">
+                        <form
+                            onsubmit="event.preventDefault()"
+                            class="space-y-6"
+                        >
+                            <input
+                                type="text"
+                                placeholder="First name"
+                                name="name"
+                                class="px-4 py-3 bg-white w-full outline-none"
+                            />
+                            <input
+                                type="email"
+                                placeholder="Email"
+                                name="email"
+                                class="px-4 py-3 bg-white w-full outline-none"
+                            />
+                            <input
+                                type="text"
+                                placeholder="Phone number"
+                                name="number"
+                                class="px-4 py-3 bg-white w-full outline-none"
+                            />
+
+                            <textarea
+                                name="message"
+                                class="px-4 py-3 bg-white w-full outline-none h-36"
+                                placeholder="Your message"
+                            ></textarea>
+
+                            <button
+                                type="submit"
+                                class="px-10 py-2.5 text-white bg-black text-center border border-black hover:text-black hover:bg-primary font-semibold cursor-pointer"
+                            >
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Circle! -->
+                <div
+                    class="w-56 h-56 bg-secondary rounded-full absolute top-1/2 -translate-y-1/2 -left-35 hidden xl:block"
+                ></div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-black text-white py-12">
+            <div class="max-w-[756px] mx-auto px-5">
+                <div
+                    class="flex flex-col sm:flex-row items-center justify-between gap-3 mb-8"
+                >
+                    <ul
+                        class="flex items-center gap-8 font-bold order-2 sm:order-none"
+                    >
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+
+                    <a href="/" class="order-1 sm:order-none"
+                        ><img
+                            src="/src/assets/icons/logo_light.svg"
+                            alt="Logo Light"
+                    /></a>
+
+                    <ul
+                        class="flex items-center gap-8 font-bold order-3 sm:order-none"
+                    >
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <p class="text-center mb-5 text-sm">
+                    Follow me on Social Media:
+                </p>
+                <div class="flex justify-center items-center gap-5">
+                    <a href="#"
+                        ><img
+                            src="/src/assets/icons/instagram.svg"
+                            alt="Instagram icon"
+                            class="invert-100 w-5 h-5"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="/src/assets/icons/tweeter.svg"
+                            alt="Instagram icon"
+                            class="invert-100 w-5 h-5"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="/src/assets/icons/dribble.svg"
+                            alt="Instagram icon"
+                            class="invert-100 w-5 h-5"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="/src/assets/icons/facebook.svg"
+                            alt="Instagram icon"
+                            class="invert-100 w-5 h-5"
+                    /></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script>
+            document
+                .querySelectorAll("a[href^='#testimonial']")
+                .forEach((anchor) => {
+                    anchor.addEventListener("click", function (e) {
+                        e.preventDefault();
+
+                        const targetId = this.getAttribute("href");
+                        const targetElement = document.querySelector(targetId);
+
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: "smooth",
+                                inline: "center",
+                                block: "nearest",
+                            });
+                        }
+                    });
+                });
+        </script>
+    </body>
+</html>

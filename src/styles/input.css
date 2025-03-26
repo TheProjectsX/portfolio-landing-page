@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+/* .font-montserrat,
+.font-montserrat button {
+    font-family: "Montserrat", sans-serif;
+} */
+
+.max-width {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+@theme {
+    --font-primary: "Montserrat", sans-serif;
+    --color-primary: #ffd4d0;
+    --color-secondary: #fc3314;
+}
+
+/* Hide Scrollbar */
+.hide-scrollbar {
+    scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Custom Design to make Navbar Responsive (self-written code) */
+.nav {
+    padding: 18px;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+
+    /* Using Grid-Template-Areas to Style the Layout */
+    grid-template-areas: "logo links button";
+}
+
+.site-logo {
+    grid-area: logo;
+}
+
+.nav-links-container {
+    display: grid;
+    transition: grid-template-rows 0.2s, padding 0.2s;
+
+    grid-area: links;
+}
+
+.nav-links-container ul {
+    overflow: hidden;
+}
+
+.nav-links-container li {
+    display: contents;
+}
+
+/* The Menu Button primarily is Hidden for every Navbar */
+.menu-dropdown-label {
+    display: none;
+    grid-area: menu;
+    cursor: pointer;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-button {
+    grid-area: button;
+}
+
+/* Media Queries */
+/* The Breakpoint starts When "width < 600px" */
+/* For some Navbar, it maybe earlier. But to use only One breakpoint, 600px is Correct for Mobile Devices as well as Smaller Screens */
+@media (width < 800px) {
+    .nav {
+        grid-template-areas:
+            "menu logo button"
+            "links links links";
+    }
+
+    .menu-dropdown-label {
+        display: flex;
+    }
+
+    .nav-links-container ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links-container {
+        grid-template-rows: 0fr;
+        border-bottom: 0px solid black;
+        width: 70%;
+        margin-inline: auto;
+    }
+
+    #dropdown-menu-opener:checked ~ .nav-links-container {
+        padding-block: 10px;
+        grid-template-rows: 1fr;
+    }
+}
