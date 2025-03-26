@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,8 +10,14 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="/src/styles/index.css" />
-        <title>Document</title>
+
+        <link
+            rel="shortcut icon"
+            href="/src/assets/favicon.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="./src/styles/index.css" />
+        <title>Portfolio Landing Page</title>
     </head>
     <body class="font-primary">
         <!-- Header / Home Section -->
@@ -19,14 +25,14 @@
             <nav class="max-width relative z-10 nav">
                 <!-- Menu Opener - Hamburger Icon -->
                 <label for="dropdown-menu-opener" class="menu-dropdown-label">
-                    <img src="/src/assets/icons/menu.svg" alt="Menu Icon" />
+                    <img src="./src/assets/icons/menu.svg" alt="Menu Icon" />
                 </label>
                 <input type="checkbox" id="dropdown-menu-opener" hidden />
 
                 <div class="site-logo">
                     <a href="/"
                         ><img
-                            src="/src/assets/icons/logo_dark.svg"
+                            src="./src/assets/icons/logo_dark.svg"
                             width="136"
                             height="45"
                     /></a>
@@ -36,28 +42,28 @@
                     <ul class="text-base font-bold flex gap-2 navbar-links">
                         <li>
                             <a
-                                href="#"
+                                href="#about"
                                 class="px-1.5 hover:underline underline-offset-4"
                                 >About</a
                             >
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="#services"
                                 class="px-1.5 hover:underline underline-offset-4"
                                 >Services</a
                             >
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="#portfolio"
                                 class="px-1.5 hover:underline underline-offset-4"
                                 >Portfolio</a
                             >
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="#blog"
                                 class="px-1.5 hover:underline underline-offset-4"
                                 >Blog</a
                             >
@@ -67,7 +73,7 @@
 
                 <div class="nav-button">
                     <a
-                        href="#"
+                        href="#contact"
                         class="px-6 py-3 text-white bg-black text-center border border-black hover:text-black hover:bg-primary font-semibold"
                     >
                         Let's Talk
@@ -96,13 +102,13 @@
                         class="flex gap-2 items-center justify-center md:justify-normal"
                     >
                         <a
-                            href="#"
+                            href="#contact"
                             class="px-8 py-2.5 text-white bg-black text-center border border-black hover:text-black hover:bg-primary font-semibold"
                         >
                             Hire Me
                         </a>
                         <a
-                            href="#"
+                            href="#portfolio"
                             class="px-8 py-2.5 text-black bg-primary text-center border border-black hover:text-white hover:bg-black font-semibold"
                         >
                             Portfolio
@@ -111,7 +117,7 @@
                 </div>
                 <div>
                     <img
-                        src="/src/assets/images/home_hero.png"
+                        src="./src/assets/images/home_hero.png"
                         alt="Home hero Image"
                         class="translate-y-1.5 xl:max-w-[670px]"
                     />
@@ -127,7 +133,7 @@
         <!-- Main Section(s) -->
         <main>
             <!-- About Me Section -->
-            <section class="bg-black text-white py-16 relative">
+            <section class="bg-black text-white py-16 relative" id="about">
                 <div
                     class="max-w-[1064px] mx-auto px-5 flex flex-col items-center text-center"
                 >
@@ -184,7 +190,7 @@
             </section>
 
             <!-- Services -->
-            <section class="py-16 bg-white relative">
+            <section class="py-16 bg-white relative" id="services">
                 <div
                     class="max-width mx-auto px-5 flex flex-col items-center text-center"
                 >
@@ -200,7 +206,7 @@
                     >
                         <div class="p-3">
                             <img
-                                src="/src/assets/icons/star.svg"
+                                src="./src/assets/icons/star.svg"
                                 alt="Star Icon"
                                 class="mb-3"
                             />
@@ -213,7 +219,7 @@
                         </div>
                         <div class="p-3">
                             <img
-                                src="/src/assets/icons/rings.svg"
+                                src="./src/assets/icons/rings.svg"
                                 alt="Star Icon"
                                 class="mb-3"
                             />
@@ -226,7 +232,7 @@
                         </div>
                         <div class="p-3">
                             <img
-                                src="/src/assets/icons/search.svg"
+                                src="./src/assets/icons/search.svg"
                                 alt="Star Icon"
                                 class="mb-3"
                             />
@@ -239,7 +245,7 @@
                         </div>
                         <div class="p-3">
                             <img
-                                src="/src/assets/icons/checklist.svg"
+                                src="./src/assets/icons/checklist.svg"
                                 alt="Star Icon"
                                 class="mb-3"
                             />
@@ -255,7 +261,7 @@
             </section>
 
             <!-- Portfolio -->
-            <section class="pb-16">
+            <section class="pb-16" id="portfolio">
                 <div class="max-w-width mx-auto flex flex-col items-center">
                     <div class="bg-primary w-full pt-12 pb-32 text-center">
                         <h3 class="text-4xl font-bold mb-6">My Portfolio</h3>
@@ -272,7 +278,7 @@
                     >
                         <div>
                             <img
-                                src="/src/assets/portfolio/educational_platform.png"
+                                src="./src/assets/portfolio/educational_platform.png"
                                 alt="Educational Platform Page Image"
                                 class="mb-8"
                             />
@@ -289,7 +295,7 @@
                                     href="#"
                                     class="rounded-full bg-secondary p-1.5"
                                     ><img
-                                        src="/src/assets/icons/arrow.svg"
+                                        src="./src/assets/icons/arrow.svg"
                                         alt="Arrow Icon"
                                         class="w-4"
                                 /></a>
@@ -298,7 +304,7 @@
 
                         <div>
                             <img
-                                src="/src/assets/portfolio/travel_app.png"
+                                src="./src/assets/portfolio/travel_app.png"
                                 alt="Travel Page Page Image"
                                 class="mb-8"
                             />
@@ -315,7 +321,7 @@
                                     href="#"
                                     class="rounded-full bg-secondary p-1.5"
                                     ><img
-                                        src="/src/assets/icons/arrow.svg"
+                                        src="./src/assets/icons/arrow.svg"
                                         alt="Arrow Icon"
                                         class="w-4"
                                 /></a>
@@ -324,7 +330,7 @@
 
                         <div>
                             <img
-                                src="/src/assets/portfolio/personal_page.png"
+                                src="./src/assets/portfolio/personal_page.png"
                                 alt="Personal Page Image"
                                 class="mb-8"
                             />
@@ -339,7 +345,7 @@
                                     href="#"
                                     class="rounded-full bg-secondary p-1.5"
                                     ><img
-                                        src="/src/assets/icons/arrow.svg"
+                                        src="./src/assets/icons/arrow.svg"
                                         alt="Arrow Icon"
                                         class="w-4"
                                 /></a>
@@ -348,7 +354,7 @@
 
                         <div>
                             <img
-                                src="/src/assets/portfolio/furniture_app.png"
+                                src="./src/assets/portfolio/furniture_app.png"
                                 alt="Furniture Mobile App Image"
                                 class="mb-8"
                             />
@@ -363,7 +369,7 @@
                                     href="#"
                                     class="rounded-full bg-secondary p-1.5"
                                     ><img
-                                        src="/src/assets/icons/arrow.svg"
+                                        src="./src/assets/icons/arrow.svg"
                                         alt="Arrow Icon"
                                         class="w-4"
                                 /></a>
@@ -372,7 +378,7 @@
 
                         <div>
                             <img
-                                src="/src/assets/portfolio/coffee_house.png"
+                                src="./src/assets/portfolio/coffee_house.png"
                                 alt="Coffee House Page Image"
                                 class="mb-8"
                             />
@@ -389,7 +395,7 @@
                                     href="#"
                                     class="rounded-full bg-secondary p-1.5"
                                     ><img
-                                        src="/src/assets/icons/arrow.svg"
+                                        src="./src/assets/icons/arrow.svg"
                                         alt="Arrow Icon"
                                         class="w-4"
                                 /></a>
@@ -398,7 +404,7 @@
 
                         <div>
                             <img
-                                src="/src/assets/portfolio/home_services.png"
+                                src="./src/assets/portfolio/home_services.png"
                                 alt="Home Services Page Image"
                                 class="mb-8"
                             />
@@ -415,7 +421,7 @@
                                     href="#"
                                     class="rounded-full bg-secondary p-1.5"
                                     ><img
-                                        src="/src/assets/icons/arrow.svg"
+                                        src="./src/assets/icons/arrow.svg"
                                         alt="Arrow Icon"
                                         class="w-4"
                                 /></a>
@@ -540,7 +546,7 @@
 
                             <div class="flex items-center justify-center gap-3">
                                 <img
-                                    src="/src/assets/images/client_01.png"
+                                    src="./src/assets/images/client_01.png"
                                     alt="Client Image"
                                     width="50"
                                     height="50"
@@ -556,7 +562,7 @@
                                 class="absolute top-0 md:top-1/2 md:-translate-y-1/2 left-10 p-2"
                             >
                                 <img
-                                    src="/src/assets/icons/arrow_left_flat.svg"
+                                    src="./src/assets/icons/arrow_left_flat.svg"
                                     alt="Left Arrow icon"
                                 />
                             </a>
@@ -565,7 +571,7 @@
                                 class="absolute top-0 md:top-1/2 md-translate-y-1/2 right-10 p-2"
                             >
                                 <img
-                                    src="/src/assets/icons/arrow_right_flat.svg"
+                                    src="./src/assets/icons/arrow_right_flat.svg"
                                     alt="Left Arrow icon"
                                 />
                             </a>
@@ -592,7 +598,7 @@
 
                             <div class="flex items-center justify-center gap-3">
                                 <img
-                                    src="/src/assets/images/client_01.png"
+                                    src="./src/assets/images/client_01.png"
                                     alt="Client Image"
                                     width="50"
                                     height="50"
@@ -608,7 +614,7 @@
                                 class="absolute top-0 md:top-1/2 md:-translate-y-1/2 left-10 p-2"
                             >
                                 <img
-                                    src="/src/assets/icons/arrow_left_flat.svg"
+                                    src="./src/assets/icons/arrow_left_flat.svg"
                                     alt="Left Arrow icon"
                                 />
                             </a>
@@ -617,7 +623,7 @@
                                 class="absolute top-0 md:top-1/2 md:-translate-y-1/2 right-10 p-2"
                             >
                                 <img
-                                    src="/src/assets/icons/arrow_right_flat.svg"
+                                    src="./src/assets/icons/arrow_right_flat.svg"
                                     alt="Left Arrow icon"
                                 />
                             </a>
@@ -644,7 +650,7 @@
 
                             <div class="flex items-center justify-center gap-3">
                                 <img
-                                    src="/src/assets/images/client_01.png"
+                                    src="./src/assets/images/client_01.png"
                                     alt="Client Image"
                                     width="50"
                                     height="50"
@@ -660,7 +666,7 @@
                                 class="absolute top-0 md:top-1/2 md:-translate-y-1/2 left-10 p-2"
                             >
                                 <img
-                                    src="/src/assets/icons/arrow_left_flat.svg"
+                                    src="./src/assets/icons/arrow_left_flat.svg"
                                     alt="Left Arrow icon"
                                 />
                             </a>
@@ -669,7 +675,7 @@
                                 class="absolute top-0 md:top-1/2 md:-translate-y-1/2 right-10 p-2"
                             >
                                 <img
-                                    src="/src/assets/icons/arrow_right_flat.svg"
+                                    src="./src/assets/icons/arrow_right_flat.svg"
                                     alt="Left Arrow icon"
                                 />
                             </a>
@@ -683,7 +689,7 @@
             </section>
 
             <!-- Design Insights and Inspiration -->
-            <section class="py-16 bg-[#F7F7F7]">
+            <section class="py-16 bg-[#F7F7F7]" id="blog">
                 <div
                     class="max-width mx-auto px-5 flex flex-col items-center text-center"
                 >
@@ -702,7 +708,7 @@
                     >
                         <div class="bg-white">
                             <img
-                                src="/src/assets/blog/typography.png"
+                                src="./src/assets/blog/typography.png"
                                 alt="Typography Post Banner"
                                 class="w-full mb-8"
                             />
@@ -724,7 +730,7 @@
                                     class="flex items-center gap-2 font-bold"
                                     >Read More
                                     <img
-                                        src="/src/assets/icons/arrow_right_flat_small.svg"
+                                        src="./src/assets/icons/arrow_right_flat_small.svg"
                                         alt="Arrow Flat"
                                 /></a>
                             </div>
@@ -732,7 +738,7 @@
 
                         <div class="bg-white">
                             <img
-                                src="/src/assets/blog/color_psychology.png"
+                                src="./src/assets/blog/color_psychology.png"
                                 alt="Typography Post Banner"
                                 class="w-full mb-8"
                             />
@@ -752,7 +758,7 @@
                                     class="flex items-center gap-2 font-bold"
                                     >Read More
                                     <img
-                                        src="/src/assets/icons/arrow_right_flat_small.svg"
+                                        src="./src/assets/icons/arrow_right_flat_small.svg"
                                         alt="Arrow Flat"
                                 /></a>
                             </div>
@@ -760,7 +766,7 @@
 
                         <div class="bg-white">
                             <img
-                                src="/src/assets/blog/boosting_ux.png"
+                                src="./src/assets/blog/boosting_ux.png"
                                 alt="Typography Post Banner"
                                 class="w-full mb-8"
                             />
@@ -780,7 +786,7 @@
                                     class="flex items-center gap-2 font-bold"
                                     >Read More
                                     <img
-                                        src="/src/assets/icons/arrow_right_flat_small.svg"
+                                        src="./src/assets/icons/arrow_right_flat_small.svg"
                                         alt="Arrow Flat"
                                 /></a>
                             </div>
@@ -790,7 +796,10 @@
             </section>
 
             <!-- Get in Touch -->
-            <section class="py-16 bg-primary relative overflow-hidden">
+            <section
+                class="py-16 bg-primary relative overflow-hidden"
+                id="contact"
+            >
                 <div
                     class="max-width flex flex-col md:flex-row gap-15 md:gap-8 justify-between items-center"
                 >
@@ -804,21 +813,21 @@
 
                         <p class="flex gap-4 items-center mb-8">
                             <img
-                                src="/src/assets/icons/call.svg"
+                                src="./src/assets/icons/call.svg"
                                 alt="Call Icon"
                             />
                             <span>+1205 5872 321</span>
                         </p>
                         <p class="flex gap-4 items-center mb-8">
                             <img
-                                src="/src/assets/icons/mail.svg"
+                                src="./src/assets/icons/mail.svg"
                                 alt="Email Icon"
                             />
                             <span> contact@sarajonesdesign.com</span>
                         </p>
                         <p class="flex gap-4 items-center mb-16">
                             <img
-                                src="/src/assets/icons/location.svg"
+                                src="./src/assets/icons/location.svg"
                                 alt="Location Icon"
                             />
                             <span
@@ -832,28 +841,28 @@
                                 href="#"
                                 class="bg-white w-7 h-7 rounded-full flex justify-center items-center"
                                 ><img
-                                    src="/src/assets/icons/tweeter.svg"
+                                    src="./src/assets/icons/tweeter.svg"
                                     alt="Tweeter"
                             /></a>
                             <a
                                 href="#"
                                 class="bg-white w-7 h-7 rounded-full flex justify-center items-center"
                                 ><img
-                                    src="/src/assets/icons/instagram.svg"
+                                    src="./src/assets/icons/instagram.svg"
                                     alt="Tweeter"
                             /></a>
                             <a
                                 href="#"
                                 class="bg-white w-7 h-7 rounded-full flex justify-center items-center"
                                 ><img
-                                    src="/src/assets/icons/dribble.svg"
+                                    src="./src/assets/icons/dribble.svg"
                                     alt="Tweeter"
                             /></a>
                             <a
                                 href="#"
                                 class="bg-white w-7 h-7 rounded-full flex justify-center items-center"
                                 ><img
-                                    src="/src/assets/icons/facebook.svg"
+                                    src="./src/assets/icons/facebook.svg"
                                     alt="Tweeter"
                             /></a>
                         </div>
@@ -915,21 +924,21 @@
                     <ul
                         class="flex items-center gap-8 font-bold order-2 sm:order-none"
                     >
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
                     </ul>
 
                     <a href="/" class="order-1 sm:order-none"
                         ><img
-                            src="/src/assets/icons/logo_light.svg"
+                            src="./src/assets/icons/logo_light.svg"
                             alt="Logo Light"
                     /></a>
 
                     <ul
                         class="flex items-center gap-8 font-bold order-3 sm:order-none"
                     >
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#blog">Blog</a></li>
                     </ul>
                 </div>
 
@@ -939,25 +948,25 @@
                 <div class="flex justify-center items-center gap-5">
                     <a href="#"
                         ><img
-                            src="/src/assets/icons/instagram.svg"
+                            src="./src/assets/icons/instagram.svg"
                             alt="Instagram icon"
                             class="invert-100 w-5 h-5"
                     /></a>
                     <a href="#"
                         ><img
-                            src="/src/assets/icons/tweeter.svg"
+                            src="./src/assets/icons/tweeter.svg"
                             alt="Instagram icon"
                             class="invert-100 w-5 h-5"
                     /></a>
                     <a href="#"
                         ><img
-                            src="/src/assets/icons/dribble.svg"
+                            src="./src/assets/icons/dribble.svg"
                             alt="Instagram icon"
                             class="invert-100 w-5 h-5"
                     /></a>
                     <a href="#"
                         ><img
-                            src="/src/assets/icons/facebook.svg"
+                            src="./src/assets/icons/facebook.svg"
                             alt="Instagram icon"
                             class="invert-100 w-5 h-5"
                     /></a>
