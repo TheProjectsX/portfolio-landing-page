@@ -28,7 +28,6 @@
 
 /* Custom Design to make Navbar Responsive (self-written code) */
 .nav {
-    padding: 18px;
     display: grid;
     align-items: center;
     justify-content: space-between;
